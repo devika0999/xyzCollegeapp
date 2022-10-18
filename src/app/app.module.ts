@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
 import { AddfacultiesComponent } from './addfaculties/addfaculties.component';
 import { ViewstudentComponent } from './viewstudent/viewstudent.component';
+import { ViewfacultyComponent } from './viewfaculty/viewfaculty.component';
 const appRoutes:Routes=[
   {
     path:"" ,component:LoginComponent
@@ -27,6 +28,9 @@ const appRoutes:Routes=[
   },
   {
     path:"viewstudent" ,component:ViewstudentComponent
+  },
+  {
+    path:"viewfaculty",component:ViewfacultyComponent
   }
 ]
 @NgModule({
@@ -37,7 +41,8 @@ const appRoutes:Routes=[
     DashboardComponent,
     AddstudentComponent,
     AddfacultiesComponent,
-    ViewstudentComponent
+    ViewstudentComponent,
+    ViewfacultyComponent
   ],
   imports: [
     BrowserModule,

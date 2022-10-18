@@ -1,0 +1,51 @@
+<section class="vh-200" style="background-color: #083fb6;">
+    <div class="container  py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="container  py-5 h-100">
+        <div class="card" style="border-radius: 1rem;">
+        <div class="row">
+      
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <app-navbar></app-navbar>
+            </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            
+            <table class="table table-bordered">
+                <thead class=>
+                <tr>
+                    <th scope="col">NAME</th>
+                    <th scope="col">DEPARTMENT</th>
+                    <th scope="col">DESIGNATION</th>
+                    <th scope="col">DOB</th>
+                    <th scope="col">EDUCATIONAL QUALIFICATION</th>
+                    <th scope="col">ADDRESS</th>
+                    <th scope="col">MOBILE</th>
+                    <th scope="col">DATE OF JOINING</th>
+                   
+                </tr>
+
+            </thead>
+
+                <tbody >
+                    <tr *ngFor ="let i of facultyData">
+                    <td>{{i.name}}</td>
+                    <td>{{i.dept}}</td>
+                    <td>{{i.designation}}</td>
+                    <td>{{i.dob}}</td>
+                    <td>{{i.edqualification}}</td>
+                    <td>{{i.address}}</td>
+                    <td>{{i.mobile}}</td>
+                    <td>{{i.doj}}</td>
+                    
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div></section>
+
+
