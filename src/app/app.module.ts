@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule} from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AddstudentComponent } from './addstudent/addstudent.component';
 const appRoutes:Routes=[
   {
     path:"" ,component:LoginComponent
@@ -15,6 +16,9 @@ const appRoutes:Routes=[
   },
   {
     path:"dashboard",component:DashboardComponent
+  },
+  {
+    path:"addstudent",component:AddstudentComponent
   }
 ]
 @NgModule({
@@ -22,7 +26,8 @@ const appRoutes:Routes=[
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    AddstudentComponent
   ],
   imports: [
     BrowserModule,
