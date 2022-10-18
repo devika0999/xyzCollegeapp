@@ -1,0 +1,54 @@
+<section class="vh-200" style="background-color: #083fb6;">
+    <div class="container  py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="container  py-5 h-100">
+        <div class="card" style="border-radius: 1rem;">
+        <div class="row">
+      
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <app-navbar></app-navbar>
+            </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            
+            <table class="table table-bordered">
+                <thead class=>
+                <tr>
+                    <th scope="col">NAME</th>
+                    <th scope="col">ROLL_NO</th>
+                    <th scope="col">ADMISSION NUMBER</th>
+                    <th scope="col">COLLEGE</th>
+                    <th scope="col">DEPARTMENT</th>
+                    <th scope="col">BLOODGROUP</th>
+                    <th scope="col">DOB</th>
+                    <th scope="col">PARENT NAME</th>
+                    <th scope="col">PARENT EMAIL</th>
+                    <th scope="col">GUARDIAN NAME</th>
+                    <th scope="col">GUARDIAN ADDRESS</th>
+                </tr>
+
+            </thead>
+
+                <tbody >
+                    <tr *ngFor ="let i of studentdata">
+                    <td>{{i.name}}</td>
+                    <td>{{i.rollno}}</td>
+                    <td>{{i.admsn}}</td>
+                    <td>{{i.college}}</td>
+                    <td>{{i.dept}}</td>
+                    <td>{{i.blood}}</td>
+                    <td>{{i.dob}}</td>
+                    <td>{{i.parent}}</td>
+                    <td>{{i.pemail}}</td>
+                    <td>{{i.guardian}}</td>
+                    <td>{{i.gaddress}}</td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div></section>
+
