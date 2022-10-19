@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-viewstudent',
@@ -7,23 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewstudentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myapi:ApiService) { 
 
-  studentdata=[
-    {
-      name: "rakhesh",
-      rollno: "1",
-      admsn: "1001",
-      college: "RIT",
-      dept:"mca",
-      blood:"A+ve",
-      dob:"18-09-1999",
-      parent:"gopal",
-      pemail:"gopal@gmail.com",
-      guardian:"mahesh kumar",
-      gaddress:"bangalore"
-    }
-  ]
+    this.fetchData()
+  }
+
+  fetchData=()=>{
+    this.myapi.viewStudent().subscribe(
+      (data)=>{
+        this.studentdata=data
+      }
+    )
+  }
+
+  studentdata:any=[]
 
   ngOnInit(): void {
   }

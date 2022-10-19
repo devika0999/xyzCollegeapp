@@ -13,86 +13,86 @@
   
                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;"><B>ADD NEW STUDENT!</B></h5>
   
-                    <div class="form-outline mb-4">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
                       <label class="form-label" for="form2Example17">NAME</label>
-                      <input type="text" id="form2Example17" class="form-control form-control-lg" />
+                      <input type="text" id="form2Example17" class="form-control form-control-lg" name="name" [(ngModel)]="name" />
                     </div>
   
-                    <div class="form-outline mb-4">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
                         <label class="form-label" for="form2Example17">ROLL NO</label>
-                        <input type="text" id="form2Example17" class="form-control form-control-lg" />
+                        <input type="text" id="form2Example17" class="form-control form-control-lg" name="rollno" [(ngModel)]="rollno"/>
                       </div>
 
 
-                      <div class="form-outline mb-4">
+                      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
                         <label class="form-label" for="form2Example17">ADMISSION NUMBER</label>
-                        <input type="text" id="form2Example17" class="form-control form-control-lg" />
+                        <input type="text" id="form2Example17" class="form-control form-control-lg" name="admsn" [(ngModel)]="admsn"/>
                       </div>
 
-                      <div class="form-outline mb-4">
+                      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
                         <label class="form-label" for="form2Example17">COLLEGE</label>
-                        <input type="text" id="form2Example17" class="form-control form-control-lg" />
+                        <input type="text" id="form2Example17" class="form-control form-control-lg" name="college" [(ngModel)]="college"/>
                       </div>
 
-                      <div class="form-outline mb-4">
+                      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
                         <label class="form-label" for="form2Example17">DEPARTMENT</label>
-                        <select name="" id="form2Example17" class="form-control form-control-lg">
-                            <option value="">MCA</option>
-                            <option value="">BTECH</option>
-                            <option value="">CIVIL</option>
-                            <option value="">MECH</option>
-                            <option value="">EEE</option>
-                            <option value="">MBA</option>
+                        <select name="" id="form2Example17" class="form-control form-control-lg" name="dept" [(ngModel)]="dept">
+                            <option value="MCA">MCA</option>
+                            <option value="BTECH">BTECH</option>
+                            <option value="CIVIL">CIVIL</option>
+                            <option value="MECH">MECH</option>
+                            <option value="EEE">EEE</option>
+                            <option value="MBA">MBA</option>
                         </select>
                       </div>
 
-                      <div class="form-outline mb-4">
+                      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
                         <label class="form-label" for="form2Example17">BLOOD GROUP</label>
-                        <select name="" id="form2Example17" class="form-control form-control-lg">
-                            <option value="">A+ve</option>
-                            <option value="">B+ve</option>
-                            <option value="">AB+ve</option>
-                            <option value="">AB-ve</option>
-                            <option value="">O+ve</option>
-                            <option value="">B-ve</option>
+                        <select name="" id="form2Example17" class="form-control form-control-lg" name="blood" [(ngModel)]="blood">
+                            <option value="A+ve">A+ve</option>
+                            <option value="B+ve">B+ve</option>
+                            <option value="AB+ve">AB+ve</option>
+                            <option value="AB-ve">AB-ve</option>
+                            <option value="O+ve">O+ve</option>
+                            <option value="B-ve">B-ve</option>
                         </select>
                       </div>
 
-                      <div class="form-outline mb-4">
+                      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
                         <label class="form-label" for="form2Example17">DOB</label>
-                        <input type="date" id="form2Example17" class="form-control form-control-lg" />
+                        <input type="date" id="form2Example17" class="form-control form-control-lg" name="dob" [(ngModel)]="dob"/>
                       </div>
 
                      
-                        <div class="form-outline mb-4">
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
                             <label class="form-label" for="form2Example17">PARENT NAME</label>
-                            <input type="text" id="form2Example17" class="form-control form-control-lg" />
+                            <input type="text" id="form2Example17" class="form-control form-control-lg" name="parentname" [(ngModel)]="parentname"/>
                           </div>
 
-                          <div class="form-outline mb-4">
+                          <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
                             <label class="form-label" for="form2Example17">PARENT EMAIL</label>
-                            <input type="email" id="form2Example17" class="form-control form-control-lg" />
+                            <input type="email" id="form2Example17" class="form-control form-control-lg"name="parentemail" [(ngModel)]="parentemail" />
                           </div>
 
-                          <div class="form-outline mb-4">
+                          <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
                             <label class="form-label" for="form2Example17">GUARDIAN NAME</label>
-                            <input type="text" id="form2Example17" class="form-control form-control-lg" />
+                            <input type="text" id="form2Example17" class="form-control form-control-lg" name="guardianname" [(ngModel)]="guardianname"/>
                           </div>
-                          <div class="form-outline mb-4">
+                          <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 form-outline mb-4">
                             <label class="form-label" for="form2Example17">GUARDIAN ADDRESS</label>
-                            <textarea name="" id="form2Example17"  class="form-control form-control-lg"cols="30" rows="10"></textarea>
+                            <textarea name="" id="form2Example17"  class="form-control form-control-lg"cols="30" rows="10" name="guardianaddress" [(ngModel)]="guardianaddress"></textarea>
                           </div>
 
 
 
                     <div class="pt-1 mb-4">
-                      <button class="btn btn-dark btn-lg btn-block" type="button"><a class="nav-link" href="">SUBMIT</a>
+                      <button class="btn btn-dark " type="button" (click)="readValues()">SUBMIT
 
                     </button>
                     
                     </div>
                     <div>
-                        <a  href="/">GO TO LOGIN</a>
+                        <a  href="/dashboard">GO TO DASHBOARD</a>
                     </div>
   
                     
